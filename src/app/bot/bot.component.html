@@ -1,0 +1,69 @@
+<div class="bodyer">
+  <div class="upside">
+    <div class="game-icons">
+      <img style="margin-right: 5px" src="../../assets/img/x.png" alt="" />
+      <img src="../../assets/img/img.png" alt="" />
+    </div>
+    <div class="turn">
+      <img
+        *ngIf="toggleTurn; else second"
+        src="../../assets/img/x.png"
+        alt=""
+      />
+      <ng-template #second>
+        <img src="../../assets/img/img.png" alt="" />
+      </ng-template>
+
+      <p>TURN</p>
+    </div>
+    <button>
+      <img
+        (click)="nextRound()"
+        style="height: 20px; position: relative; bottom: 3px"
+        src="../../assets/img/restart.png"
+        alt=""
+      />
+    </button>
+  </div>
+  <div class="middleSide">
+    <div
+      (click)="gridsFuncs(index)"
+      class="grid"
+      *ngFor="let grid of grids; let index = index"
+    >
+      <img *ngIf="grid == 1" src="../../assets/img/x.png" alt="" />
+      <img *ngIf="grid == 2" src="../../assets/img/img.png" alt="" />
+    </div>
+  </div>
+  <div class="bottomSide">
+    <button class="zogadi">
+      <p class="pirveli">X (P1)</p>
+      <p class="meore">{{ iqsik }}</p>
+    </button>
+    <button class="zogadi">
+      <p class="pirveli">TIES</p>
+      <p class="meore">{{ tier }}</p>
+    </button>
+    <button class="zogadi">
+      <p class="pirveli">O (P2)</p>
+      <p class="meore">{{ nolik }}</p>
+    </button>
+  </div>
+</div>
+
+<!-- The Modal -->
+<div [ngStyle]="{ display: modalToggle }" id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <p>{{ whoIs }}</p>
+    <div class="middle-modal">
+      <img *ngIf="imgToggler == 2" src="../../assets/img/img.png" alt="" />
+      <img *ngIf="imgToggler == 1" src="../../assets/img/x.png" alt="" />
+      <h1 [ngStyle]="{ color: colorModal }">{{ midol }}</h1>
+    </div>
+    <div>
+      <button (click)="closeModal()">QUIT</button>
+      <button (click)="nextRound()">NEXT ROUND</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,97 @@
+.middle-main {
+  margin: auto;
+  width: 300px;
+  position: relative;
+  top: 150px;
+}
+.upside {
+  margin: auto;
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+}
+.upside img {
+  height: 30px;
+}
+.middle-side {
+  background-color: #1f3641;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 13px;
+  box-shadow: 0px 7px #10212a;
+}
+.middle-side P {
+  margin: auto;
+  width: fit-content;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.875px;
+  text-align: center;
+}
+.toggler {
+  width: 85%;
+  margin: auto;
+  height: 55px;
+  background-color: #1a2a33;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.toggler button {
+  width: 50%;
+  background: none;
+  border: none;
+  border-radius: 10px;
+  height: 90%;
+  z-index: 5;
+  padding-top: 4px;
+}
+.charcho {
+  height: 45px;
+  width: 117px;
+  position: absolute;
+  background: #a8bfc9;
+  border-radius: 5px;
+  transition: transform 0.2s ease;
+}
+.actived {
+  transform: translateX(128px);
+}
+.bottom-side button {
+  width: 100%;
+  margin-top: 30px;
+  height: 45px;
+  border-radius: 10px;
+  border: none;
+  font-family: system-ui;
+  font-weight: 600;
+  font-size: 1em;
+}
+.bottom-side button:first-child {
+  background-color: #f2b137;
+  box-shadow: 0px 5px #cc8b13;
+}
+
+.bottom-side button:nth-child(2) {
+  background-color: #31c3bd;
+  box-shadow: 0px 5px #118c87;
+}
+
+.filler {
+  fill: #b6b6b6;
+  border-color: #1a2a33 !important;
+}
+.circ {
+  height: 36px;
+  width: 36px;
+  margin: auto;
+  border: solid 8px;
+  border-radius: 50px;
+  border-color: #b6b6b6;
+}

@@ -1,0 +1,46 @@
+<div class="middle-main">
+  <div class="upside">
+    <img src="../../assets/img/x.png" alt="" />
+    <img src="../../assets/img/img.png" alt="" />
+  </div>
+  <div class="middle-side">
+    <p style="color: #a8bfc9">PICK PLAYER 1’S MARK</p>
+    <div class="toggler">
+      <div class="charcho" [ngClass]="{ actived: bgToggler }"></div>
+      <button (click)="bgTogglerX()">
+        <svg _ngcontent-yvm-c16="" width="100" height="100">
+          <rect
+            _ngcontent-yvm-c16=""
+            x="10"
+            y="25"
+            width="40"
+            height="10"
+            ry="2"
+            fill="#1a2a33"
+            transform="rotate(45 50 50)"
+            [ngClass]="{ filler: bgToggler }"
+          ></rect>
+          <rect
+            _ngcontent-yvm-c16=""
+            x="50"
+            y="25"
+            width="40"
+            height="10"
+            ry="2"
+            fill="#1a2a33"
+            transform="rotate(-45 50 50)"
+            [ngClass]="{ filler: bgToggler }"
+          ></rect>
+        </svg>
+      </button>
+      <button (click)="bgTogglerO()">
+        <div class="circ" [ngClass]="{ filler: bgToggler }"></div>
+      </button>
+    </div>
+    <p style="color: #a8bfc9">REMEMBER : X GOES FIRST</p>
+  </div>
+  <div class="bottom-side">
+    <button (click)="botGame()">NEW GAME (VS CPU)</button>
+    <button (click)="playGame()">NEW GAME (VS PLAYER)</button>
+  </div>
+</div>

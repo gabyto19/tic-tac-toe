@@ -1,0 +1,251 @@
+.bodyer {
+    height: 400px;
+    width: 320px;
+    margin: auto;
+    position: relative;
+    top: 150px;
+  }
+  .upside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .upside button {
+    background-color: #a8bfc9;
+    border: none;
+    box-shadow: 0px 3px #6b8997;
+    border-radius: 5px;
+    padding-top: 5px;
+  }
+  .upside div,
+  button {
+    margin: 0;
+  }
+  
+  .turn {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #1f3641;
+    width: 25%;
+    height: 33px;
+    border-radius: 8px;
+    box-shadow: 0px 4px #10212a;
+    margin-right: 8px !important;
+  }
+  .turn p {
+    color: #a8bfc9;
+  }
+  .turn img {
+    filter: grayscale(2);
+  }
+  .game-icons {
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+  }
+  .game-icons img {
+    height: 20px;
+  }
+  .turn img {
+    height: 15px;
+  }
+  .turn p {
+    margin-top: 14px;
+  }
+  
+  .middleSide {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 5%;
+  }
+  
+  .grid {
+    height: 88px;
+    width: 88px;
+    background-color: #1f3641;
+    border-radius: 15px;
+    box-shadow: 0px 4px #10212a;
+  }
+  
+  .bottomSide {
+    display: flex;
+    justify-content: space-between;
+  }
+  .bottomSide button {
+    width: 29%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+  }
+  .bottomSide button:first-child {
+    background-color: #31c3bd;
+  }
+  .bottomSide button:nth-child(2) {
+    background-color: #a8bfc9;
+  }
+  .bottomSide button:nth-child(3) {
+    background-color: #f2b137;
+  }
+  .ex {
+    background-image: url("../../assets/img/x.png");
+  }
+  .middleSide img {
+    margin: auto;
+    height: 40px;
+    display: block;
+    position: relative;
+    top: 25%;
+  }
+  
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: fixed;
+    bottom: 45%;
+    background-color: #1f3641;
+    width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 230px;
+    padding-bottom: 20px;
+  }
+  .modal-content p {
+    color: #a8bfc9;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  .modal-content button {
+    border-radius: 5px;
+    border: none;
+  }
+  .modal-content button:first-child {
+    margin-right: 20px;
+    background-color: #a8bfc9;
+    height: 35px;
+    width: 75px;
+    box-shadow: 0px 5px #6b8997;
+  }
+  .modal-content button:nth-child(2) {
+    height: 35px;
+    width: 140px;
+    background-color: #f2b137;
+    box-shadow: 0px 5px #cc8b13;
+  }
+  .middle-modal {
+    display: flex;
+    align-items: center;
+  }
+  .middle-modal h1 {
+    margin-left: 15px;
+  }
+  .middle-modal img {
+    height: 50px;
+  }
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .modal-body {
+    padding: 2px 16px;
+  }
+  
+  .modal-footer {
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes slideIn {
+    from {
+      bottom: -300px;
+      opacity: 0;
+    }
+    to {
+      bottom: 45%;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      bottom: -300px;
+      opacity: 0;
+    }
+    to {
+      bottom: 45%;
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .zogadi p{
+    margin: 0;
+  }
+  .pirveli {
+    font-size: 0.8em;
+  }
+  .meore
+  {
+    font-weight: 700;
+  }
